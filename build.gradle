@@ -6,10 +6,5 @@ plugins {
 }
 
 dependencies {
-  implementation('org.hibernate:hibernate') {
-    //in case of versions conflict '3.1' version of hibernate wins:
-    version {
-      strictly('3.1')
-    }
-  }
+  implementation('org.hibernate:hibernate') 
 }
