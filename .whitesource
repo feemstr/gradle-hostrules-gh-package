@@ -1,17 +1,5 @@
 {
-  "settingsInheritedFrom": "feemstr/whitesource-config@main",
-  "scanSettings": {
-    "enableReachability": false
-  },
-  "scanSettingsSAST": {
-    "enableScan": false
-  },
-  "remediateSettings": {
-    "workflowRules": {
-      "enabled": true
-    },
-    "enableRenovate": false
-  }
+  "settingsInheritedFrom": "feemstr/whitesource-config@main"
 }
 
 
