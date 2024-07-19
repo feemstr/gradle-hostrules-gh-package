@@ -1,2 +1,19 @@
 group 'io.flowsquad.blog'
 version '1.0.0'
+
+dependencies {
+  implementation('org.hibernate:hibernate') {
+    //in case of versions conflict '3.1' version of hibernate wins:
+    version {
+      strictly('3.1')
+    }
+
+    //excluding a particular transitive dependency:
+    exclude module: 'cglib' //by artifact name
+    exclude group: 'org.jmock' //by group
+    exclude group: 'org.unwanted', module: 'iAmBuggy' //by both name and group
+
+    //disabling all transitive dependencies of this dependency
+    transitive = false
+  }
+}
