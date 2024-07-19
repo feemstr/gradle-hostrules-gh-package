@@ -1,5 +1,5 @@
 {
-  "settingsInheritedFrom": "hugh-mend/whitesource-config@main",
+  "settingsInheritedFrom": "feemstr/whitesource-config@main",
   "scanSettings": {
     "enableReachability": false
   },
